@@ -1,0 +1,14 @@
+/Users/lideeyah/Documents/Nicrypt/middleware/target/debug/deps/serde-a0cee4d12f7f1dcf.d: /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/lideeyah/Documents/Nicrypt/middleware/target/debug/build/serde-3420c22ce357126d/out/private.rs
+
+/Users/lideeyah/Documents/Nicrypt/middleware/target/debug/deps/libserde-a0cee4d12f7f1dcf.rlib: /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/lideeyah/Documents/Nicrypt/middleware/target/debug/build/serde-3420c22ce357126d/out/private.rs
+
+/Users/lideeyah/Documents/Nicrypt/middleware/target/debug/deps/libserde-a0cee4d12f7f1dcf.rmeta: /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/lideeyah/Documents/Nicrypt/middleware/target/debug/build/serde-3420c22ce357126d/out/private.rs
+
+/Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/lideeyah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/lideeyah/Documents/Nicrypt/middleware/target/debug/build/serde-3420c22ce357126d/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/lideeyah/Documents/Nicrypt/middleware/target/debug/build/serde-3420c22ce357126d/out
