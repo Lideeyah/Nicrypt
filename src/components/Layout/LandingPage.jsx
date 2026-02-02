@@ -104,8 +104,9 @@ const LandingPage = ({ onEnter }) => {
                     fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: 'var(--slate)', maxWidth: '600px',
                     marginBottom: '3rem', lineHeight: 1.6
                 }}>
-                    The privacy-first middleware for the surveillance state era.
-                    Prove citizenship without revealing identity. Store wealth without public traceability.
+                    Transparency is for protocols. Privacy is for people.<br /><br />
+                    Nicrypt is the only interface that lets you prove your right to transact without broadcasting your identity.
+                    Sever the link between your history and your future. Move silent. Stay sovereign.
                 </p>
 
                 <button
