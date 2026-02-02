@@ -143,7 +143,7 @@ const LandingPage = ({ onEnter }) => {
                     paddingTop: '3rem'
                 }}>
                     <Metric label="Encryption" value="AES-256-GCM" />
-                    <Metric label="Zero-Knowledge" value="Groth16" />
+                    <Metric label="Zero-Knowledge" value="Schnorr NIZK" />
                     <Metric label="Privacy Layer" value="Inco FHE" />
                     <Metric label="Settlement" value="Solana Token-22" />
                 </div>
