@@ -21,16 +21,16 @@ const VerificationModal = ({ isOpen, onVerify, onClose }) => {
 
         setStatus('PROVING');
         setLogs([]);
-        addLog("Initializing ZK-SNARK Circuit...");
+        addLog("Initializing Schnorr NIZK (secp256k1)...");
 
         try {
             // 1. Generate Local Secret (Ephemeral)
             const localSecret = window.crypto.randomUUID();
-            addLog("Generating Local Witness...");
+            addLog("Computing Elliptic Curve Witness...");
 
             // 2. Generate Proof
             const { proof, publicSignals } = await IdentityModule.generateZKProof(nin, localSecret);
-            addLog("Proof Generated via Groth16");
+            addLog("Proof Generated via Schnorr");
             addLog(`Nullifier: ${publicSignals[1].substring(0, 16)}...`);
 
             // 3. Clear Sensitive Data
