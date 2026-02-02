@@ -81,7 +81,7 @@ npm run dev
 1.  **Connect:** Link your Phantom wallet to begin the Exposure Scan.
 2.  **Verify:** Pass the ZK-Gate (Mock verification for demo).
 3.  **Deposit:** Send `0.1 SOL` to the Shield. Watch it vanish from your public balance.
-4.  **Withdraw:** Use the "Sovereign Egress" to send funds to a *different* address. Verify on Solscan that the link is obfuscated.
+4.  **Withdraw:** Use the "Sovereign Egress" to send funds to a *different* address. Use "1234" as Security PIN. Verify on Solscan that the link is obfuscated.
 
 ---
 
