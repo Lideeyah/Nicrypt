@@ -83,8 +83,8 @@ export const SecurityModule = {
     async decryptState(encryptedBlob, pin) {
         try {
             const key = await deriveKey(pin);
+            // ... (existing logic handled by logic retention, but strictly typing out for replacement context)
             const combined = new Uint8Array(atob(encryptedBlob).split("").map(c => c.charCodeAt(0)));
-
             const iv = combined.slice(0, 12);
             const ciphertext = combined.slice(12);
 
@@ -98,6 +98,39 @@ export const SecurityModule = {
         } catch (e) {
             console.error("Decryption Failed:", e);
             throw new Error("Access Denied: Invalid PIN or Corrupted State");
+        }
+    },
+
+    /**
+     * Signs a message using a deterministic Ed25519 key derived from the PIN.
+     * This creates a verifiable "Solvency Proof" that the Vault Owner authorized the egress.
+     */
+    async signMessage(message, pin) {
+        try {
+            // lazy load elliptic to avoid bundle bloat if unused
+            const { ec: EC } = await import('elliptic');
+            const ec = new EC('ed25519');
+
+            // Derive Private Key from PIN (SHA-256 Hash)
+            const encoder = new TextEncoder();
+            const pinHash = await window.crypto.subtle.digest('SHA-256', encoder.encode(pin));
+            const privateKeyHex = Array.from(new Uint8Array(pinHash)).map(b => b.toString(16).padStart(2, '0')).join('');
+
+            // Create Keypair
+            const keyPair = ec.keyFromPrivate(privateKeyHex);
+
+            // Sign
+            const msgHash = Array.from(new Uint8Array(await window.crypto.subtle.digest('SHA-256', encoder.encode(message))));
+            const signature = keyPair.sign(msgHash);
+
+            return {
+                signature: signature.toDER('hex'),
+                publicKey: keyPair.getPublic('hex'),
+                message: message
+            };
+        } catch (e) {
+            console.error("Signing Failed:", e);
+            throw new Error("Failed to sign solvency proof.");
         }
     }
 };

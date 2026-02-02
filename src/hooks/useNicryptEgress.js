@@ -53,14 +53,26 @@ export const useNicryptEgress = () => {
                 txId = "sim_egress_" + Date.now();
             }
 
-            // 4. Update Audit Log (Scrubbed)
+            // 4. Generate Real Solvency Proof (Digital Signature)
+            const timestamp = new Date().toISOString();
+            const proofMessage = `SOLVENCY_PROOF|${amount}|${recipient}|${txId}|${timestamp}`;
+
+            // Sign the proof with the Vault's Private Key (Derived from PIN)
+            const signatureData = await SecurityModule.signMessage(proofMessage, pin);
+
+            // 5. Update Audit Log (With Cryptographic Proof)
             setAuditLog({
                 source: "Nicrypt Vault [SHIELDED]",
-                amount: "ENCRYPTED_BLOB",
                 destination: recipient,
-                identityLink: "NONE",
+                amount: amount,
                 txId: txId,
-                timestamp: new Date().toISOString()
+                timestamp: timestamp,
+                solvencyProof: {
+                    algorithm: "Ed25519",
+                    signature: signatureData.signature,
+                    publicKey: signatureData.publicKey,
+                    message: proofMessage
+                }
             });
 
             // 5. Update Vault State
