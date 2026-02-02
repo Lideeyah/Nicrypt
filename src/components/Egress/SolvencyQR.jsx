@@ -29,11 +29,12 @@ export const SolvencyQR = ({ data, title = "Solvency Proof" }) => {
         <div style={containerStyle}>
             <h3 style={{ fontSize: '0.8rem', fontFamily: 'var(--font-mono)', color: 'var(--slate)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{title}</h3>
 
-            <div style={{ position: 'relative', padding: '10px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', background: 'white' }}>
+            <div style={{ position: 'relative', padding: '16px', borderRadius: '12px', background: 'white' }}>
                 <QRCodeSVG
                     value={data}
-                    size={180}
-                    level="M"
+                    size={256}
+                    level="L" // Lower error correction = less dense = easier to scan
+                    includeMargin={true}
                     fgColor="#000000"
                     bgColor="#FFFFFF"
                 />
