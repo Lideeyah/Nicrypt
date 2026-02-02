@@ -11,13 +11,15 @@
 
 > **"Privacy is not about hiding. It is about retaining the power of consent."**
 
-**Nicrypt** is the first *Sovereign Privacy Interface* built on Solana. It serves as a cryptographic shield between your public on-chain identity and your private financial movements. By combining **Real Zero-Knowledge Proofs (Schnorr NIZK)** with **Confidential Computing (Inco FHE)**, Nicrypt demonstrates a future where financial transparency does not come at the cost of personal exposure.
+**Nicrypt** is the first *Sovereign Privacy Interface* on Solana.
 
-This is not just a wallet. It is a **Sovereign Vault**. 
+### What is a Sovereign Privacy Interface (SPI)?
+Unlike standard "Privacy Wallets" or "Mixer Protocols", an SPI is a **Client-Side Orchestrator**. It does not hold funds in a shared pool. Instead, it coordinates:
+1.  **Identity:** Real ZK-Proofs (Schnorr).
+2.  **State:** Confidential Computing (Inco FHE).
+3.  **Settlement:** Non-Custodial Encrypted Vaults.
 
----
-
-## ⚡ The Sovereign Stack
+By decoupling these layers, Nicrypt allows users to maintain privacy without trusting a central smart contract with their assets.
 
 Nicrypt functions as a Client-Side Privacy Coordinator, orchestrating a complex dance between public ledgers and private state.
 
