@@ -1,7 +1,5 @@
 import { ec as EC } from 'elliptic';
-import { sha256 } from 'js-sha256'; // If unavailable, we use a simple native fallback
-// Fallback if js-sha256 isn't there (we assume native crypto or simple hashing)
-// But since we are client side, window.crypto is best.
+// using native window.crypto.subtle for hashing
 
 const ec = new EC('secp256k1');
 

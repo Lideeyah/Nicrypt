@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     nodePolyfills({
       // To add only specific polyfills, add them here. If no option is passed, adds all.
-      include: ['buffer', 'crypto', 'stream', 'util'],
+      include: ['buffer', 'crypto', 'stream', 'util', 'vm'],
       globals: {
         Buffer: true,
         global: true,
@@ -16,4 +16,8 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    port: 5173,
+    strictPort: true,
+  },
 })
