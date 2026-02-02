@@ -104,8 +104,8 @@ const LandingPage = ({ onEnter }) => {
                     fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: 'var(--slate)', maxWidth: '600px',
                     marginBottom: '3rem', lineHeight: 1.6
                 }}>
-                    Nicrypt is the only interface that lets you prove your right to transact without broadcasting your identity.
-                    Sever the link between your history and your future. Move silent. Stay sovereign.
+                    Stop making your wallet a target. Nicrypt separates your identity from your transaction history, giving you immunity from profiling and surveillance.
+                    Verify your humanity, not your net worth. Move silent. Stay sovereign.
                 </p>
 
                 <button
