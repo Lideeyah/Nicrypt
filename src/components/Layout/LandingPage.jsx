@@ -104,8 +104,8 @@ const LandingPage = ({ onEnter }) => {
                     fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: 'var(--slate)', maxWidth: '600px',
                     marginBottom: '3rem', lineHeight: 1.6
                 }}>
-                    Stop making your wallet a target. Nicrypt separates your identity from your transaction history, giving you immunity from profiling and surveillance.
-                    Verify your humanity, not your net worth. Move silent. Stay sovereign.
+                    New mandates are turning your private keys into public profiles. Nicrypt is a sovereign middleware that surgically separates who you are from how you spend.
+                    No tracking. No profiling. Just pure, unlinked transactions powered by the Solana Token-2022 confidential extension.
                 </p>
 
                 <button
